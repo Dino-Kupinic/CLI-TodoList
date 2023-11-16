@@ -1,7 +1,5 @@
 package org.dkupinic;
 
-import java.sql.Array;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
@@ -9,7 +7,6 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         ArrayList<TodoList> todoLists = new ArrayList<>();
-        TodoList todoList;
         String operation = "";
         Scanner scanner = new Scanner(System.in);
 
