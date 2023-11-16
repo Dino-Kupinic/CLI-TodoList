@@ -2,6 +2,8 @@
 
 > simple cli todo list app to test github actions
 
+This project was done in circa 1 hour.
+
 ## 🤯 Installation 
 
 ### Installation
