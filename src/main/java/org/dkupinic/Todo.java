@@ -10,9 +10,15 @@ public class Todo {
     private String content;
     private boolean isFinished;
 
-    public Todo(String title, String content, boolean isFinished) {
+    /**
+     * Constructs a new Todo object with the given title, content, and finished status.
+     *
+     * @param title the title of the todo
+     * @param content the content of the todo
+     */
+    public Todo(String title, String content) {
         this.title = title;
         this.content = content;
-        this.isFinished = isFinished;
+        this.isFinished = false;
     }
 }
