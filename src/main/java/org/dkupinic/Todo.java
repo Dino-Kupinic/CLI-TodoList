@@ -3,6 +3,9 @@ package org.dkupinic;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * Represents a todo item.
+ */
 @Setter
 @Getter
 public class Todo {

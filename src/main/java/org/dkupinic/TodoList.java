@@ -6,6 +6,9 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.Date;
 
+/**
+ * This class represents a TodoList, which is a collection of todos.
+ */
 @Setter
 @Getter
 public class TodoList {
