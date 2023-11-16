@@ -1,14 +1,11 @@
 package org.dkupinic;
 
-import java.sql.Array;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
         ArrayList<TodoList> todoLists = new ArrayList<>();
-        TodoList todoList;
         String operation = "";
         Scanner scanner = new Scanner(System.in);
 
@@ -21,7 +18,6 @@ public class App {
             if (scanner.hasNextLine()) {
                 switch (operation) {
                     case "n" -> todoLists.add(createTodo());
-                    case "e" -> System.out.println("");
                     case "d" -> delete(todoLists);
                     case "h" -> showInformation();
                     case "exit" -> System.out.println("Exiting program");
@@ -35,7 +31,6 @@ public class App {
 
     public static void showInformation() {
         System.out.println("Enter: \n   [n] - new Todo-List \n" +
-                "   [e] - edit existing Todo-List \n" +
                 "   [d] - delete exisiting Todo-List \n" +
                 "   [exit] - exit program \n" +
                 "   [p] - print all Todo-Lists with Todos"
@@ -80,14 +75,6 @@ public class App {
                 System.out.println("Todo: " + element.getTitle() + "'");
             }
         }
-    }
-
-    public static void editTodoList () {
-        Scanner scanner = new Scanner(System.in);
-        Scanner scannerTodo = new Scanner(System.in);
-        System.out.println("Enter the name of the Todo-List you would like to edit: ");
-        String listName = scanner.nextLine();
-
     }
 }
 
