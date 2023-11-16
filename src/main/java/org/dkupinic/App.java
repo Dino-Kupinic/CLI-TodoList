@@ -26,8 +26,8 @@ public class App {
                     case "p" -> printTodos(todoLists);
                     default -> System.out.println("Invalid Information");
                 }
+                System.out.println("   [h] - show help information");
             }
-            System.out.println("   [h] - show help information");
         }
     }
 
@@ -91,6 +91,7 @@ public class App {
             System.out.println("Todo-List '" + t.getName() + "' contains: ");
             for (Todo element : t.getTodos()) {
                 System.out.println("    -Todo: '" + element.getTitle() + "'");
+                System.out.println("With the content: " + element.getContent());
             }
         }
     }
