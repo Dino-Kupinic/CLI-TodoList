@@ -88,10 +88,6 @@ public class App {
         System.out.println("Enter the name of the Todo-List you would like to edit: ");
         String listName = scanner.nextLine();
 
-
-        System.out.println("[a] - Add new Todo");
-        String todoName = scannerTodo.next();
-
     }
 }
 
