@@ -91,7 +91,7 @@ public class App {
             System.out.println("Todo-List '" + t.getName() + "' contains: ");
             for (Todo element : t.getTodos()) {
                 System.out.println("    -Todo: '" + element.getTitle() + "'");
-                System.out.println("With the content: " + element.getContent());
+                System.out.println("        With the content: " + element.getContent());
             }
         }
     }
@@ -100,7 +100,7 @@ public class App {
         System.out.println("\n====== Editing Todo-List ======");
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the name of the Todo-List you would like to edit: ");
-        String listName = scanner.nextLine();
+        String listName = scanner.next();
 
         System.out.println("What would you like to do?");
         System.out.println("    [a] - add a new Todo\n    [e] - edit an existing Todo");
@@ -119,9 +119,8 @@ public class App {
         System.out.print("Enter the name you would like for your Todo: ");
         String todoName = scanner.next();
         System.out.print("Enter the content for the Todo: ");
-        String todoContent = scanner.next();
 
-        todoList.getTodos().add(new Todo(todoName, todoContent));
+        todoList.getTodos().add(new Todo(todoName, scanner.nextLine()));
         System.out.println("Added Todo!");
     }
 
